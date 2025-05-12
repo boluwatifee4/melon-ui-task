@@ -56,7 +56,7 @@ npm run dev
 
 ## 🌐 Live Demo
 
-[https://your-live-link.netlify.app](https://your-live-link.netlify.app)
+[https://ola-bima-melon-ui-submission.netlify.app/](https://your-live-link.netlify.app)
 
 ---
 
@@ -76,7 +76,15 @@ Tests are written using `Vitest` and `@testing-library/react`. See `src/componen
 
 | Landing Page                       | Product Manager                  |
 | ---------------------------------- | -------------------------------- |
-| ![](public/screenshot-landing.png) | ![](public/screenshot-store.png) |
+| <img width="1362" alt="image" src="https://github.com/user-attachments/assets/fa9e86d5-8a84-4d93-8e92-da61c15ad11f" />
+ <img width="1362" alt="image" src="https://github.com/user-attachments/assets/af3229e9-f712-4c2a-97b8-2d57a9db26d5" />
+
+ | <img width="1362" alt="image" src="https://github.com/user-attachments/assets/d32dee7b-cb7c-41b1-a39d-a84498186bb0" />
+ <img width="1362" alt="image" src="https://github.com/user-attachments/assets/2fadf419-754e-4b4c-8319-c138bb30f64b" /> 
+ <img width="1362" alt="image" src="https://github.com/user-attachments/assets/5db23b3a-b550-4f37-a899-b686da7fd553" />
+<img width="1362" alt="image" src="https://github.com/user-attachments/assets/f5d764fa-0ede-4388-8c22-67fec39e0f07" />
+
+ |
 
 ---
 
