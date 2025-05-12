@@ -1,17 +1,24 @@
-// src/App.tsx
+/*
+Directory: src/App.tsx
+*/
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "sonner";
+import { LandingPage } from "@/pages/LandingPage";
+import { ProductManager } from "@/components/ProductManager";
 
 const queryClient = new QueryClient();
 
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <main className="min-h-screen p-4 md:p-8 bg-white max-w-5xl mx-auto">
-        <h1 className="text-3xl font-bold mb-6">🛍 Product Variant Manager</h1>
-        {/* ProductManager component will go here */}
-        <Toaster richColors position="bottom-right" />
-      </main>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/store" element={<ProductManager />} />
+        </Routes>
+      </BrowserRouter>
+      <Toaster richColors position="bottom-right" />
     </QueryClientProvider>
   );
 }

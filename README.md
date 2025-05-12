@@ -1,54 +1,100 @@
-# React + TypeScript + Vite
+# 🛍 Product Variant Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully responsive product + variant management app, inspired by Shopify’s interface.
 
-Currently, two official plugins are available:
+Built with:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ✅ React + TypeScript + Vite
+- ✅ React Query for local state caching
+- ✅ Shadcn UI for elegant component styling
+- ✅ Zod + React Hook Form for schema-based form validation
+- ✅ LocalStorage for persistence (no backend required)
+- ✅ Optional: Seed real products from the Fake Store API
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Features
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- Add products with names (e.g., "Sneakers", "T-shirt")
+- Add/edit/delete product variants (Size, Color, Price)
+- Search/filter across products and variants
+- Fully responsive (mobile → desktop)
+- Seed mock data from [Fake Store API](https://fakestoreapi.com/)
+- Real-time persistence in localStorage
+- Toast notifications on all user actions
+
+---
+
+## 🧠 Tech Stack
+
+- **React + Vite** – fast SPA setup
+- **TypeScript** – strict typing for better safety
+- **React Query** – local state management
+- **Zod** – form validation schema
+- **React Hook Form** – performance-optimized form control
+- **Shadcn UI** – Tailwind-based UI components
+- **LocalStorage** – client-side data persistence
+
+---
+
+## 📦 Getting Started
+
+### 🛠️ Installation
+
+```bash
+git clone https://github.com/your-username/product-variant-manager.git
+cd product-variant-manager
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🌐 Live Demo
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+## 🖼️ Screenshots
+
+---
+
+## 🔗 API Integration
+
+This app optionally pulls products from:
+
+- [https://fakestoreapi.com/products](https://fakestoreapi.com/products)
+
+Each product is seeded with mock variant data (Size M, Red, price).
+
+---
+
+## 🧪 Bonus Features (Optional Extensions)
+
+- Dropdowns for variant sizes and colors
+- Variant edit mode with inline form
+- Variant form validation
+- Real-time search over all data
+- Toast notifications via `sonner`
+
+---
+
+## 🧾 Folder Structure
+
 ```
+src/
+├── components/           # UI components
+├── features/products/    # Types, utils, hooks for product logic
+├── lib/                  # Storage + API utils
+├── styles/               # Global Tailwind styles
+└── App.tsx, main.tsx     # Entrypoint
+```
+
+---
+
+## ✅ License
+
+MIT License © \[Your Name]
+
+---
+
+## 📣 Feedback
+
+Have feedback or suggestions? Create an issue or PR.
