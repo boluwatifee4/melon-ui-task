@@ -48,8 +48,8 @@ Built with:
 ```bash
 git clone https://github.com/your-username/product-variant-manager.git
 cd product-variant-manager
-npm install
-npm run dev
+yarn install
+yarn dev
 ```
 
 ---
